@@ -12,7 +12,7 @@ void trapezoid(float a, float b, float c, float d, float h) {
 }
 
 int main() {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "Rus");
     float a, b, c, d, h;
 
     // Ввод и расчет параметров для трапеции
