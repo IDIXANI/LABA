@@ -4,20 +4,20 @@
 #include <math.h>
 
 
-// Функции для трапеции
+// Г”ГіГ­Д™Г¶ДЌДЌ Г¤Г«Л™ Е€Д‘Е•ДЏДєГ¶ДЌДЌ
 void trapezoid(float a, float b, float c, float d, float h) {
     float perimeter = a + b + c + d;
     float area = ((a + b) / 2) * h;
     float midLine = (a + b) / 2;
-    printf("\nТрапеция:\nПериметр: %.2f\nПлощадь: %.2f\nСредняя линия: %.2f\n", perimeter, area, midLine);
+    printf("\nЕ‡Д‘Е•ДЏДєГ¶ДЌЛ™:\nДЋДєД‘ДЌД›ДєЕ€Д‘: %.2f\nДЋГ«Г®ЕЇЕ•Г¤Гј: %.2f\nЕѓД‘ДєГ¤Г­Л™Л™ Г«ДЌГ­ДЌЛ™: %.2f\n", perimeter, area, midLine);
 }
 
 int main() {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "Rus");
     float a, b, c, d, h;
 
-    // Ввод и расчет параметров для трапеции
-    printf("\nВведите основания и боковые стороны трапеции (a b c d) и высоту h: ");
+    // Г‚ГўГ®Г¤ ДЌ Д‘Е•Е„Г·ДєЕ€ ДЏЕ•Д‘Е•Д›ДєЕ€Д‘Г®Гў Г¤Г«Л™ Е€Д‘Е•ДЏДєГ¶ДЌДЌ
+    printf("\nГ‚ГўДєГ¤ДЌЕ€Дє Г®Е„Г­Г®ГўЕ•Г­ДЌЛ™ ДЌ ГЎГ®Д™Г®ГўЕ±Дє Е„Е€Г®Д‘Г®Г­Е± Е€Д‘Е•ДЏДєГ¶ДЌДЌ (a b c d) ДЌ ГўЕ±Е„Г®Е€Гі h: ");
     scanf("%f %f %f %f %f", &a, &b, &c, &d, &h);
     trapezoid(a, b, c, d, h);
 
