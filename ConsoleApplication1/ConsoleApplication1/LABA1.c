@@ -10,22 +10,11 @@ void rectangle(float a, float b) {
     float diagonal = sqrt(a * a + b * b);
     printf("\nПрямоугольник:\nПериметр: %.2f\nПлощадь: %.2f\nДиагональ: %.2f\n", perimeter, area, diagonal);
 }
-// ������� ��� ��������
-void trapezoid(float a, float b, float c, float d, float h) {
-    float perimeter = a + b + c + d;
-    float area = ((a + b) / 2) * h;
-    float midLine = (a + b) / 2;
-    printf("\n��������:\n��������: %.2f\n�������: %.2f\n������� �����: %.2f\n", perimeter, area, midLine);
-}
 
 int main() {
     setlocale(LC_ALL, "Rus");
     float a, b, c, d, h;
 
-    // ���� � ������ ���������� ��� ��������
-    printf("\n������� ��������� � ������� ������� �������� (a b c d) � ������ h: ");
-    scanf("%f %f %f %f %f", &a, &b, &c, &d, &h);
-    trapezoid(a, b, c, d, h);
     // Ввод и расчет параметров для прямоугольника
     printf("Введите стороны прямоугольника (a b): ");
     scanf("%f %f", &a, &b);
