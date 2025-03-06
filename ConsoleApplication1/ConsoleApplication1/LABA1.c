@@ -2,40 +2,28 @@
 #include <locale.h>
 #include <stdio.h>
 #include <math.h>
-// Функции для треугольника
+
+// Р¤СѓРЅРєС†РёРё РґР»СЏ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
 void triangle(float a, float b, float c) {
     if (a + b <= c  a + c <= b  b + c <= a) {
-        printf("\nОшибка: Такой треугольник не существует!\n");
+        printf("\nРћС€РёР±РєР°: РўР°РєРѕР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє РЅРµ СЃСѓС‰РµСЃС‚РІСѓРµС‚!\n");
         return;
     }
     float perimeter = a + b + c;
     float s = perimeter / 2;
     float area = sqrt(s * (s - a) * (s - b) * (s - c));
     int isIsosceles = (a == b  a == c  b == c);
-    printf("\nТреугольник:\nПериметр: %.2f\nПлощадь: %.2f\nРавнобедренный: %s\n", perimeter, area, isIsosceles ? "Да" : "Нет");
-}
-
-// Функции для трапеции
-void trapezoid(float a, float b, float c, float d, float h) {
-    float perimeter = a + b + c + d;
-    float area = ((a + b) / 2) * h;
-    float midLine = (a + b) / 2;
-    printf("\nТрапеция:\nПериметр: %.2f\nПлощадь: %.2f\nСредняя линия: %.2f\n", perimeter, area, midLine);
+    printf("\nРўСЂРµСѓРіРѕР»СЊРЅРёРє:\nРџРµСЂРёРјРµС‚СЂ: %.2f\nРџР»РѕС‰Р°РґСЊ: %.2f\nР Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№: %s\n", perimeter, area, isIsosceles ? "Р”Р°" : "РќРµС‚");
 }
 
 int main() {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, "Rus");
     float a, b, c, d, h;
 
-    // Ввод и расчет параметров для треугольника
-    printf("\nВведите стороны треугольника (a b c): ");
+    // Р’РІРѕРґ Рё СЂР°СЃС‡РµС‚ РїР°СЂР°РјРµС‚СЂРѕРІ РґР»СЏ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР°
+    printf("\nР’РІРµРґРёС‚Рµ СЃС‚РѕСЂРѕРЅС‹ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° (a b c): ");
     scanf("%f %f %f", &a, &b, &c);
     triangle(a, b, c);
-
-    // Ввод и расчет параметров для трапеции
-    printf("\nВведите основания и боковые стороны трапеции (a b c d) и высоту h: ");
-    scanf("%f %f %f %f %f", &a, &b, &c, &d, &h);
-    trapezoid(a, b, c, d, h);
 
     return 0;
 }
