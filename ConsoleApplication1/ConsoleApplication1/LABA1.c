@@ -53,7 +53,6 @@ void trapezoid(float a, float b, float c, float d) {
 int main() {
     setlocale(LC_ALL, "");
     float a, b, c, d;
-
     // Ввод и расчет параметров для прямоугольника
     printf("Введите стороны прямоугольника (a b): ");
     scanf("%f %f", &a, &b);
@@ -68,6 +67,5 @@ int main() {
     printf("\nВведите основания и боковые стороны трапеции (a b c d): ");
     scanf("%f %f %f %f", &a, &c, &b, &d);
     trapezoid(a, c, b, d);
-
     return 0;
 }
