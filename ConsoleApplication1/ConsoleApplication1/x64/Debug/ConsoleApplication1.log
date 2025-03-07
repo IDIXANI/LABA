@@ -1,5 +1,5 @@
 ﻿  LABA1.c
-C:\Users\Пашков\Desktop\LABA№1\LABA\ConsoleApplication1\ConsoleApplication1\LABA1.c(15,22): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
 C:\Users\Пашков\Desktop\LABA№1\LABA\ConsoleApplication1\ConsoleApplication1\LABA1.c(33,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
-C:\Users\Пашков\Desktop\LABA№1\LABA\ConsoleApplication1\ConsoleApplication1\LABA1.c(52,18): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+C:\Users\Пашков\Desktop\LABA№1\LABA\ConsoleApplication1\ConsoleApplication1\LABA1.c(56,20): warning C4101: d: неиспользованная локальная переменная
+  LINK : не найден или не выполнена сборка C:\Users\Пашков\Desktop\LABA№1\LABA\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe при последней инкрементной компоновке; выполняется полная компоновка
   ConsoleApplication1.vcxproj -> C:\Users\Пашков\Desktop\LABA№1\LABA\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

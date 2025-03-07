@@ -4,17 +4,17 @@
 #include <math.h>
 
 // Функции для прямоугольника
-void rectangle(float a, float b) {
-    if (a <= 0 || b <= 0) {
-        printf("\nОшибка: стороны прямоугольника должны быть положительными!\n");
-        return;
-    }
-
-    float perimeter = 2 * (a + b);
-    float area = a * b;
-    float diagonal = sqrt(a * a + b * b);
-    printf("\nПрямоугольник:\nПериметр: %.2f\nПлощадь: %.2f\nДиагональ: %.2f\n", perimeter, area, diagonal);
-}
+//void rectangle(float a, float b) {
+//    if (a <= 0 || b <= 0) {
+//        printf("\nОшибка: стороны прямоугольника должны быть положительными!\n");
+//        return;
+//    }
+//
+//    float perimeter = 2 * (a + b);
+//    float area = a * b;
+//    float diagonal = sqrt(a * a + b * b);
+//    printf("\nПрямоугольник:\nПериметр: %.2f\nПлощадь: %.2f\nДиагональ: %.2f\n", perimeter, area, diagonal);
+//}
 
 // Функции для треугольника
 void triangle(float a, float b, float c) {
@@ -36,33 +36,29 @@ void triangle(float a, float b, float c) {
 }
 
 // Функции для трапеции
-void trapezoid(float a, float b, float c, float d) {
-    if (a <= 0 || b <= 0 || c <= 0 || d <= 0) {
-        printf("\nОшибка: стороны и высота трапеции должны быть положительными!\n");
-        return;
-    }
-
-   /* if (a + c >= b + d) {
-        printf("\nСтороны трапеции не корректны\n"); \
-            return;
-    }*/
-
-    float perimeter = a + b + c + d;
-    float pp = perimeter / 2;
-    float area = sqrt((pp - a) * (pp - b) * (pp - c) * (pp - d));
-    float midLine = (a + b) / 2;
- 
-    printf("\nТрапеция:\nПериметр: %.2f\nПлощадь: %.2f\nСредняя линия: %.2f\n", perimeter, area, midLine);
-}
+//void trapezoid(float a, float b, float c, float d) {
+//    if (a <= 0 || b <= 0 || c <= 0 || d <= 0) {
+//        printf("\nОшибка: стороны и высота трапеции должны быть положительными!\n");
+//        return;
+//    }
+//
+//
+//    float perimeter = a + b + c + d;
+//    float pp = perimeter / 2;
+//    float area = sqrt((pp - a) * (pp - b) * (pp - c) * (pp - d));
+//    float midLine = (a + b) / 2;
+// 
+//    printf("\nТрапеция:\nПериметр: %.2f\nПлощадь: %.2f\nСредняя линия: %.2f\n", perimeter, area, midLine);
+//}
 
 int main() {
     setlocale(LC_ALL, "");
     float a, b, c, d;
 
     // Ввод и расчет параметров для прямоугольника
-    printf("Введите стороны прямоугольника (a b): ");
+ /*   printf("Введите стороны прямоугольника (a b): ");
     scanf("%f %f", &a, &b);
-    rectangle(a, b);
+    rectangle(a, b);*/
 
     // Ввод и расчет параметров для треугольника
     printf("\nВведите стороны треугольника (a b c): ");
@@ -70,9 +66,9 @@ int main() {
     triangle(a, b, c);
 
     // Ввод и расчет параметров для трапеции
-    printf("\nВведите основания и боковые стороны трапеции (a b c d): ");
-    scanf("%f %f %f %f", &a, &c, &b, &d);
-    trapezoid(a, c, b, d);
+    //printf("\nВведите основания и боковые стороны трапеции (a b c d): ");
+    //scanf("%f %f %f %f", &a, &c, &b, &d);
+    //trapezoid(a, c, b, d);
 
     return 0;
 }
