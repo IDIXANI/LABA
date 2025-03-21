@@ -54,6 +54,10 @@ void trapezoid(float a, float b, float c, float d) {
         printf("\nОшибка: стороны и высота трапеции должны быть положительными!\n");
         return;
     }
+    if (c <= (a + b) / 2 || d <= (a + b) / 2) {
+        printf("\nОшибка: трапеция не существует\n");
+        return;
+    }
 
     float perimeter = a + b + c + d;
     float pp = perimeter / 2;
@@ -93,3 +97,6 @@ int main() {
     return 0;
 }
 //1234567890
+
+
+//88005553535 лучше позвонить, чем у кого то занимать!!!
